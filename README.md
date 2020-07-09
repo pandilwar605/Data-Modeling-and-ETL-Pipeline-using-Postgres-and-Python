@@ -25,6 +25,12 @@ For this database, I have used Star schema shown in a diagram below:
 
 <img src="star_schema.png" alt="drawing"/>
 
+## ETL Pipeline
+
+1. <b>etl.py</b> contains the ETL pipeline for the project.
+2. There are two functions for processing data. One is for processing song data and other is for processing log data.
+3. We iterate through all the files and send them to a respective function to process and insert the data into a table.
+4. If the similar records are present in file, on conflict we do nothing and skip processing that record.
 
 ## How to run
 
